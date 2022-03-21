@@ -5,5 +5,6 @@ int ft_strlen(char *str);
 int ft_isalpha(char c);
 int ft_isdigit(int c);
 int ft_isalnum(char c);
+int ft_isascii(char c);
 
 #endif
