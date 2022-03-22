@@ -6,9 +6,9 @@
 
 int main()
 {
-  char s[] = "Hello";
-  int c = 'l';
+  char s1[] = " ";
+  char s2[] = " ";
 
-  printf("strrchr : %s", strrchr(s, c));
-  printf("\nft_strrchr : %s", ft_strrchr(s, c));
+  printf("strncmp : %d", strncmp(s1, s2, 4));
+  printf("\nft_strncmp : %d", ft_strncmp(s1, s2, 4));
 }
