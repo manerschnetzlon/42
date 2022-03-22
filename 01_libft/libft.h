@@ -10,6 +10,8 @@ int ft_isalnum(char c);
 int ft_isascii(char c);
 int ft_isprint(char c);
 void *ft_memset(void *b, int c, size_t len);
-void *ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
+void *ft_memcpy(void *dst, const void *src, size_t n);
+void bzero(void *s, size_t n);
+void *memmove(void *dst, const void *src, size_t len);
 
 #endif
