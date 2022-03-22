@@ -6,11 +6,7 @@
 
 int main()
 {
-  char src[] = "Hello";
-  char dst[10];
+  int c = 'A';
 
-  strlcpy(dst, src, 2);
-
-  printf("%s\n", dst);
-  return (0);
+  printf("%c", ft_tolower(c));
 }
