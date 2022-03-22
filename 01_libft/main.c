@@ -9,6 +9,6 @@ int main()
   char s[] = "Hello";
   int c = 'l';
 
-  printf("strchr : %s", strchr(s, c));
-  printf("\nft_strchr : %s", ft_strchr(s, c));
+  printf("strrchr : %s", strrchr(s, c));
+  printf("\nft_strrchr : %s", ft_strrchr(s, c));
 }
