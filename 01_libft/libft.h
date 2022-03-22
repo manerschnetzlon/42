@@ -13,5 +13,6 @@ void *ft_memset(void *b, int c, size_t len);
 void *ft_memcpy(void *dst, const void *src, size_t n);
 void bzero(void *s, size_t n);
 void *memmove(void *dst, const void *src, size_t len);
+size_t strlcpy(char *dst, const char *src, size_t dstsize);
 
 #endif
