@@ -6,7 +6,9 @@
 
 int main()
 {
-  int c = 'A';
+  char s[] = "Hello";
+  int c = 'l';
 
-  printf("%c", ft_tolower(c));
+  printf("strchr : %s", strchr(s, c));
+  printf("\nft_strchr : %s", ft_strchr(s, c));
 }
