@@ -3,6 +3,7 @@
 
 typedef unsigned long size_t;
 
+int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
 int ft_isalpha(char c);
 int ft_isdigit(int c);
