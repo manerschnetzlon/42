@@ -5,6 +5,7 @@ typedef unsigned long size_t;
 
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
+void *ft_calloc(size_t count, size_t size);
 int ft_isalpha(char c);
 int ft_isdigit(int c);
 int ft_isalnum(char c);
