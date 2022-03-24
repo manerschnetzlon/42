@@ -7,7 +7,8 @@
 
 int main()
 {
-  char s1[] = "Hello Maner";
+  char s1[] = "Hello ";
+  char s2[] = "Maner";
 
-  printf("\nft_substr : %s", ft_substr(s1, 2, 2));
+  printf("\nft_strjoin : %s", ft_strjoin(s1, s2));
 }
