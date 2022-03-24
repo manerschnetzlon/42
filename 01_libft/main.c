@@ -7,8 +7,7 @@
 
 int main()
 {
-  char s1[] = " a 2147483648987   32";
+  char s1[] = "Hello Maner";
 
-  printf("atoi : %d", atoi(s1));
-  printf("\nft_atoi : %d", ft_atoi(s1));
+  printf("\nft_substr : %s", ft_substr(s1, 2, 2));
 }
