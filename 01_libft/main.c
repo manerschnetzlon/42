@@ -7,8 +7,10 @@
 
 int main()
 {
-  char s1[] = "Hello ";
-  char s2[] = "Maner";
+  char s1[] = "Hello Maner";
+  char s2[] = " e";
 
-  printf("\nft_strjoin : %s", ft_strjoin(s1, s2));
+  printf("\nft_strtrim : %s", ft_strtrim(s1, s2));
 }
+
+// char *ft_strtrim(char const *s1, char const *set)
