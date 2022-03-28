@@ -31,11 +31,31 @@ int count_parts(char const *s, char sep)
 char **ft_split(char const *s, char c)
 {
   char **arr;
+  char *part;
+  size_t  counter;
+  size_t  i;
+  size_t  j;
 
-  arr = (char **)malloc(sizeof(char *) * 10);
-
+  counter = count_parts(s, c);
+  arr = (char **)malloc(sizeof(char *) * (counter + 1));
   if (!arr)
     return (NULL);
-  printf("\ncount : %d", count_parts(s, c));
+  i = 0;
+  while (i < counter)
+  {
+    while (c_is_sep(*s, c))
+      s++;
+    j = 0;
+    while (s[j] && !c_is_sep(s[j], c))
+      j++;
+    part = (char *)malloc(sizeof(char) * (j + 1));
+    if (!part)
+      return (NULL);
+    ft_strlcpy(part, s, (j + 1));
+    printf("\npart : %s", part);
+    s += (j + 1);
+    i++;
+  }
+  arr[i] = NULL;
   return (arr);
 }
