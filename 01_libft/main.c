@@ -7,10 +7,9 @@
 
 int main()
 {
-  char s1[] = "eeeeeeHello Manereeeeeaeeee";
-  char s2 = 'e';
+  // char s1[] = "eeeeeeHello Manereeeeeaeeee";
+  // char s2 = 'e';
 
-  ft_split(s1, s2);
+  // ft_split(s1, s2);
+  ft_itoa(-1234560);
 }
-
-// char *ft_strtrim(char const *s1, char const *set)
