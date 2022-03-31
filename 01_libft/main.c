@@ -16,17 +16,18 @@ int main()
 {
   // char s1[] = "eeeeeeHello Manereeeeeaeeee";
   // char s2 = 'e';
-  char str[] = "heeello";
-  char *tmp = str;
+  // char str[] = "heeello";
+  // char *tmp = str;
 
-  printf("tmp : %s\n", tmp);
-  // ft_split(s1, s2);
-  // ft_itoa(-1234560);
+  // printf("tmp : %s\n", tmp);
+  // // ft_sqplit(s1, s2);
+  // // ft_itoa(-1234560);
 
-  void (*fct)(unsigned int, char *) = &to_upcase;
-  ft_striteri(tmp, (*fct));
+  // void (*fct)(unsigned int, char *) = &to_upcase;
+  // ft_striteri(tmp, (*fct));
 
-  printf("str : %s\n", str);
+  // printf("str : %s\n", str);
+  ft_putchar_fd('h', 1);
 }
 
 // char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
