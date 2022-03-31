@@ -5,23 +5,28 @@
 #include <strings.h>
 #include <stdlib.h>
 
-char to_upcase(unsigned int i, char s)
+void to_upcase(unsigned int i, char *s)
 {
-  return (s - (32 - i + i));
+  (void) i;
+  *s -= 32;
+  return ;
 }
 
 int main()
 {
   // char s1[] = "eeeeeeHello Manereeeeeaeeee";
   // char s2 = 'e';
-  char str[] = "hello";
+  char str[] = "heeello";
+  char *tmp = str;
 
+  printf("tmp : %s\n", tmp);
   // ft_split(s1, s2);
   // ft_itoa(-1234560);
 
-  char (*f)(unsigned int, char) = &to_upcase;
+  void (*fct)(unsigned int, char *) = &to_upcase;
+  ft_striteri(tmp, (*fct));
 
-  printf("%s\n", ft_strmapi(str, (*f)));
+  printf("str : %s\n", str);
 }
 
 // char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
