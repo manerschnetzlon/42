@@ -5,12 +5,12 @@
 #include <strings.h>
 #include <stdlib.h>
 
-void to_upcase(unsigned int i, char *s)
-{
-  (void) i;
-  *s -= 32;
-  return ;
-}
+// void to_upcase(unsigned int i, char *s)
+// {
+//   (void) i;
+//   *s -= 32;
+//   return ;
+// }
 
 int main()
 {
@@ -27,7 +27,7 @@ int main()
   // ft_striteri(tmp, (*fct));
 
   // printf("str : %s\n", str);
-  ft_putstr_fd("hello world", 1);
+  ft_putnbr_fd(-12345, 1);
 }
 
 // char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
