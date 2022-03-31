@@ -27,7 +27,7 @@ int main()
   // ft_striteri(tmp, (*fct));
 
   // printf("str : %s\n", str);
-  ft_putchar_fd('h', 1);
+  ft_putstr_fd("hello world", 1);
 }
 
 // char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
