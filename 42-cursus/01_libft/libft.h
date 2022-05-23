@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mschnetz <mschnetz@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maner <maner@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 16:41:24 by mschnetz          #+#    #+#             */
-/*   Updated: 2022/05/09 18:36:50 by mschnetz         ###   ########.fr       */
+/*   Updated: 2022/05/23 20:13:00 by maner            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
-# include <bsd/string.h>
+// # include <bsd/string.h>
 # include <unistd.h>
 
 typedef struct s_list

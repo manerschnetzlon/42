@@ -3,35 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mschnetz <mschnetz@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maner <maner@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 11:53:18 by mschnetz          #+#    #+#             */
-/*   Updated: 2022/05/09 18:34:46 by mschnetz         ###   ########.fr       */
+/*   Updated: 2022/05/23 20:21:43 by maner            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	c_is_sep(char c, char sep)
-{
-	if (c == sep)
-		return (1);
-	return (0);
-}
-
-int	count_parts(char const *s, char sep)
+int count_parts(char const *s, char sep)
 {
 	size_t	i;
 	size_t	count;
 
 	i = 0;
-	if (*s == '\0' || c_is_sep(s[i], sep))
+	if (*s == '\0' || s[i] == sep)
 		count = 0;
 	else
 		count = 1;
 	while (s[i])
 	{
-		if (c_is_sep(s[i], sep) && s[i + 1] && !c_is_sep(s[i + 1], sep))
+		if ((s[i] == sep) && s[i + 1] && !(s[i + 1] == sep))
 			count++;
 		i++;
 	}
@@ -51,10 +44,10 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (i < counter)
 	{
-		while (c_is_sep(*s, c))
+		while (*s == c)
 			s++;
 		j = 0;
-		while (s[j] && !c_is_sep(s[j], c))
+		while (s[j] && !(s[j] == c))
 			j++;
 		part = (char *)malloc(sizeof(char) * (j + 1));
 		ft_strlcpy(part, s, (j + 1));
@@ -66,7 +59,7 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-/* int	main()
-{
-	ft_split("", ' ');
-} */
+// int	main()
+// {
+// 	ft_split("", ' ');
+// }
